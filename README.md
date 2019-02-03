@@ -1,10 +1,10 @@
 Steps followed
 
 1. I have read the filecontents, with UTF 8 encoding inorder to parse currency symbols.
-2. Split the contents of file, assuming each packaging record in each line, and value before ':' as the max allowed weight.
-3. While reading the contents, created an object(PackageDetail) that has weight, index and cost of package. Applied given constraints
-Max weight that a package can take is ? 100
-Max weight and cost of an item is ? 100
+2. I assumed that each line in the file corresponds to a unique package. Based on this assumption, I split the contents of the file. The value before ':' is the max allowed weight.
+3. While reading the contents, I created an object(PackageDetail) that has weight, index and cost of package. Applied given constraints
+Max weight that a package can take is 100
+Max weight and cost of an item is 100
 4. Created a PackageCostComparator class(that implements Comparator)to sort the list of packageDetails as per cost(maximum cost being the top value in list)
 Also added additional sort constraint to a package which weights less in	case there is more than	one	package	with the same price.
 5. Created a class that takes input as maxAllowed weight and the list of Packagedetails to be choosen for shipping.
@@ -16,7 +16,7 @@ APIException is thrown, in case if file has invalid values.
 
 Testing
 
-Note: the files used for testing are added under src/test/resources folder. While testing the absolete path of these files is to be given in respective testcases.
+Note: the files used for testing are added under src/test/resources folder. While testing the absolute path of these files is to be given in respective testcases.
 
 Created following test cases.
 1. Test that checks if the output is as expected, as per the given challenge.
