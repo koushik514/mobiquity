@@ -15,7 +15,7 @@ Additional details.
 APIException is thrown, in case if file has invalid values.
 
 Solution Details :
-To achieve this solution, I implemented "Strategy" Design pattern through the use of 'Comparator'. Using Comparator, I was able to sort the data set using custom comparision operations. 
+To achieve this solution, I implemented "Strategy" Design pattern through the use of 'Comparator'. Using Comparator, I was able to sort the data set using custom comparision operations. Using Comparator would result in better performance and reduction of boiler plate code since there would be no necessity of iterating over the data set for sorting.
 
 Testing
 
