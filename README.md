@@ -14,6 +14,9 @@ This class has a method which filters the best package/packages to be shipped.
 Additional details.
 APIException is thrown, in case if file has invalid values.
 
+Solution Details :
+To achieve this solution, I implemented "Strategy" Design pattern through the use of 'Comparator'. Using Comparator, I was able to sort the data set using custom comparision operations. 
+
 Testing
 
 Note: the files used for testing are added under src/test/resources folder. While testing the absolute path of these files is to be given in respective testcases.
