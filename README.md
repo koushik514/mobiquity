@@ -19,7 +19,7 @@ To achieve this solution, I implemented "Strategy" Design pattern through the us
 
 Testing
 
-Note: the files used for testing are added under src/test/resources folder. While testing the absolute path of these files is to be given in respective testcases.
+Note: the files used for testing are added under src/test/resources folder. While testing, the absolute path of these files is to be given in respective testcases.
 
 Created following test cases.
 1. Test that checks if the output is as expected, as per the given challenge.
